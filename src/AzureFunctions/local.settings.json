@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "QueueConnectionString": "",
+    "QueueConnectionString:blob": "",
+    "QueueConnectionString:queue": "weather-requests-queue",
+    "CosmosDb:ConnectionString": "",
+    "CosmosDb:DatabaseName": "weather-db"
+  }
+}
