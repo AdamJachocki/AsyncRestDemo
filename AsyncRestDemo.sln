@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncServer", "src\AsyncServer\AsyncServer.csproj", "{5D97CDD0-0CD2-4DFE-B324-C041C4A20650}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_deployment", "_deployment", "{B771417B-DFC2-455B-93C2-B10E3729526F}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\bicep-modules\cosmos.bicep = deployment\bicep-modules\cosmos.bicep
+		deployment\bicep-modules\function-app.bicep = deployment\bicep-modules\function-app.bicep
+		deployment\main.bicep = deployment\main.bicep
+		deployment\bicep-modules\storage.bicep = deployment\bicep-modules\storage.bicep
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "src\Common\Common.csproj", "{DDDC8E9A-2E88-4AF4-B28D-7C35FA8BEB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.CosmosDb", "src\DAL.CosmosDb\DAL.CosmosDb.csproj", "{90854ACA-7FAB-4D24-AD42-91C61DB0DC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "src\AzureFunctions\AzureFunctions.csproj", "{49EC7C32-0BF4-4D65-90C3-EF207EBD66EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D97CDD0-0CD2-4DFE-B324-C041C4A20650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D97CDD0-0CD2-4DFE-B324-C041C4A20650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D97CDD0-0CD2-4DFE-B324-C041C4A20650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D97CDD0-0CD2-4DFE-B324-C041C4A20650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDC8E9A-2E88-4AF4-B28D-7C35FA8BEB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDC8E9A-2E88-4AF4-B28D-7C35FA8BEB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDC8E9A-2E88-4AF4-B28D-7C35FA8BEB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDC8E9A-2E88-4AF4-B28D-7C35FA8BEB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90854ACA-7FAB-4D24-AD42-91C61DB0DC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90854ACA-7FAB-4D24-AD42-91C61DB0DC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90854ACA-7FAB-4D24-AD42-91C61DB0DC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90854ACA-7FAB-4D24-AD42-91C61DB0DC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EC7C32-0BF4-4D65-90C3-EF207EBD66EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EC7C32-0BF4-4D65-90C3-EF207EBD66EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EC7C32-0BF4-4D65-90C3-EF207EBD66EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EC7C32-0BF4-4D65-90C3-EF207EBD66EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84B6063D-C008-4514-84E9-21F36529972C}
+	EndGlobalSection
+EndGlobal
